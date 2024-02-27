@@ -3,6 +3,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="text-center my-4">BUKU</h2>
+                <nuxt-link to="../"><button type="submit" class="btn btn-lg rounded-5 px-5 bg-secondary text-white" style="float: right; margin-bottom: 15px;">KEMBALI</button></nuxt-link>
                 <div class="my-3">
                     <input type="search" class="form-control rounded-5" placeholder="Mau baca apa hari ini?">
                 </div>

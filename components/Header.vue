@@ -1,5 +1,5 @@
 <template>
-    <div class="row p-2 bg-primary text-white">
+    <div class="row p-3 bg-primary text-white">
         <div class="col-lg-1">
             <img src="~/assets/img/LOGO-SMK4.png" alt="logo SMKN 4">
         </div>
@@ -16,7 +16,10 @@
 
 <style scoped>
 img {
-    height: 140px;
-    width: 125px;
+    height: 130px;
+    width: 115px;
+}
+h1{
+    margin-top: 10px;
 }
 </style>

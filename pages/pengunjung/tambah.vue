@@ -54,10 +54,10 @@
                     </select>
                 </div>
                 </div>
-                <button type="submit" class="btn btn-lg rounded-5 px-5 bg-primary text-white">KIRIM</button>
-                </form>
+                <nuxt-link to="../pengunjung"><button type="submit" class="btn btn-lg rounded-5 px-5 bg-primary text-white">KIRIM</button></nuxt-link>
+                <nuxt-link to="../"><button type="submit" class="btn btn-lg rounded-5 px-5 bg-secondary text-white" style="float: right;">KEMBALI</button></nuxt-link>
+                </form><br>
             </div>
         </div>
     </div>
 </template>
-
