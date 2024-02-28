@@ -11,9 +11,11 @@
                 <div class="row">
                     <div class="col-lg-2">
                         <div class="card mb-3">
-                            <div class="card-body">
-                                <img src="~/assets/img/cover.jpg" class="cover" alt="cover 1">
-                            </div>
+                            <nuxt-link to="/buku/des">
+                                <div class="card-body">
+                                    <img src="~/assets/img/cover.jpg" class="cover" alt="cover 1">
+                                </div>
+                            </nuxt-link>
                         </div>
                     </div>
                     <div class="col-lg-2">

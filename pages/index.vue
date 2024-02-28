@@ -32,7 +32,7 @@
                 <nuxt-link to="/pengunjung">
                     <div class="card bg-warning rounded-5">
                         <div class="card-body">
-                            <h2 class="font"> 32 Pengunjung</h2>
+                            <h2 class="font"> 3 Pengunjung</h2>
                         </div>
                     </div>
                 </nuxt-link>
@@ -82,11 +82,11 @@ h1{
     color: white;
 }
 .card.bg-success {
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .card.bg-warning {
-    margin-top: 5%;
+    margin-top: 2%;
 }
 .statistik {
     color: black;
