@@ -50,9 +50,11 @@
                 </nuxt-link>
             </div>
         </div>
-    
+            <div>
+                <Chart />
+            </div>
+            
 </template>
-
 <style scoped>
 .card {
     height: 250px;
