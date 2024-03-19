@@ -29,7 +29,7 @@
 
         <div class="row my-5">
             <div class="col-lg-6">
-                <nuxt-link to="/pengunjung">
+                <nuxt-link to="/pengunjung/">
                     <div class="card bg-warning rounded-5">
                         <div class="card-body">
                             <h2 class="font"> 3 Pengunjung</h2>
@@ -50,11 +50,12 @@
                 </nuxt-link>
             </div>
         </div>
-            <div>
+        <div>
                 <Chart />
             </div>
-            
+    
 </template>
+
 <style scoped>
 .card {
     height: 250px;
