@@ -39,8 +39,8 @@ onMounted(() => {
 
 <style scoped>
 .cover {
-    height: 450px;
-    width: 350px;
+    height: 430px;
+    width: 340px;
 }
 .card.mb-8 {
     margin-top: 50px;

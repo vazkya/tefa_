@@ -5,8 +5,10 @@
                 <h2 class="text-center my-4">RIWAYAT KUNJUNGAN</h2>
                 <nuxt-link to="../"><button type="submit" class="btn btn-lg rounded-5 px-5 bg-primary text-white" style="float: right; margin-bottom: 15px;">KEMBALI</button></nuxt-link>
                 <div class="my-3">
-                    <input v-model="keyword" type="search" class="form-control rounded-5"
-                            placeholder="cari siapa?">
+                    <form @submit.prevent="getpengunjung">
+                        <input v-model="keyword" type="search" class="form-control rounded-5"
+                            placeholder="Mau baca apa hari ini?">
+                    </form>
                 </div>
                 <div class="my-3 text-muted">menampilkan 1 dari 1</div>
                 <table class="table">
@@ -41,6 +43,7 @@ const visitors = ref ([])
 
 const getpengunjung = async () => {
     const {data,error} = await supabase.from('pengunjung').select(`*, keanggotaan(*), keperluan(*)`)
+        .ilike('nama', `%${keyword.value}%`)
     if(data) visitors.value = data
 }
 onMounted(() =>{
