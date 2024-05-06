@@ -32,7 +32,7 @@
                 <nuxt-link to="/pengunjung/">
                     <div class="card bg-warning rounded-5">
                         <div class="card-body">
-                            <h2 class="font"> 3 Pengunjung</h2>
+                            <h2 class="font"> {{ jumlahpengunjung }} Pengunjung</h2>
                         </div>
                     </div>
                 </nuxt-link>
@@ -44,7 +44,7 @@
                 <nuxt-link to ="/buku">
                     <div class="card bg-success  rounded-5">
                         <div class="card-body">
-                            <h1 class="font">180 Buku</h1>
+                            <h1 class="font"> {{jumlahbuku}} Buku</h1>
                         </div>
                     </div>
                 </nuxt-link>
@@ -56,9 +56,35 @@
     
 </template>
 
+<script setup>
+const supabase = useSupabaseClient();
+const jumlahpengunjung = ref (0);
+const jumlahbuku = ref (0);
+
+async function ambiljumlahpengunjung() {
+    const { data,error, count} = await supabase
+    .from("pengunjung")
+    .select("*", {count: 'exact'});
+    if (count) jumlahpengunjung.value = count;
+}
+async function ambiljumlahbuku() {
+    const { data,error, count} = await supabase
+    .from("buku")
+    .select("*", {count: 'exact'});
+    if (count) jumlahbuku.value = count;
+}
+
+
+onMounted(() => {
+    ambiljumlahpengunjung();
+    ambiljumlahbuku();
+})
+</script>
+
 <style scoped>
 .card {
     height: 250px;
+    margin-right: 27px;
     box-shadow: 3px 1px 10px #424242;
 }
 .card.bg-pengunjung {

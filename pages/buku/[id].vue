@@ -14,9 +14,11 @@
                     <li class="list-group-item">{{ buku.deskripsi }}</li>
                 </ul>
             </div>
-        </div>
+        </div class="" style="margin-left:10px">
+        <nuxt-link to="../"><button type="submit" class="btn btn-lg rounded-5 px-5 bg-primary text-white"
+                            style="float: right; margin-top: 30px;">PINJAM</button></nuxt-link>
         <nuxt-link to="../"><button type="submit" class="btn btn-lg rounded-5 px-5 bg-secondary text-white"
-                            style="float: right; margin-top: 30px;">KEMBALI</button></nuxt-link>
+                            style="float: right; margin-right: 30px; margin-top: 30px;">KEMBALI</button></nuxt-link>
     </div>
 </template>
 
