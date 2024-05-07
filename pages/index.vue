@@ -17,7 +17,7 @@
                 <nuxt-link to ="/buku">
                     <div class="card bg-buku rounded-5">
                         <div class="card-body">
-                            <h2>Cari Buku</h2>
+                            <h2> Cari Buku</h2>
                         </div>
                     </div>
                 </nuxt-link>

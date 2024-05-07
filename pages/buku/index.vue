@@ -11,7 +11,7 @@
                             placeholder="Mau baca apa hari ini?">
                     </form>
                 </div>
-                <div class="my-3 text-muted">menampilkan {{ books.length }} buku </div>
+                <div class="my-3 text-muted">menampilkan {{ books.length }} dari {{ books.length }} buku </div>
                 <div class="row">
                     <div v-for="(book, i) in books" :key="i" class="col-lg-2">
                         <div class="card mb-4">
