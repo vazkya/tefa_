@@ -11,7 +11,7 @@
                             placeholder="Mau baca apa hari ini?">
                     </form>
                 </div>
-                <div class="my-3 text-muted">menampilkan {{ books.length }} dari {{ books.length }} buku </div>
+                <div class="my-3 text-muted">menampilkan {{ books.length }} dari {{ jumlah }} buku </div>
                 <div class="row">
                     <div v-for="(book, i) in books" :key="i" class="col-lg-2">
                         <div class="card mb-4">
@@ -30,7 +30,7 @@
 const supabase = useSupabaseClient()
 const keyword = ref('')
 const books = ref([])
-
+const jumlah = ref([])
 const getBooks = async () => {
     const { data, error } = await supabase.from('buku').select(`*, kategori(*)`)
         .ilike('judul', `%${keyword.value}%`)
@@ -44,6 +44,7 @@ const totalBuku = async () => {
 
 onMounted(() => {
     getBooks()
+    totalBuku()
 })
 </script>
 

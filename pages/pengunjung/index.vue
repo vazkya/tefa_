@@ -7,7 +7,7 @@
                 <div class="my-3">
                     <form @submit.prevent="getpengunjung">
                         <input v-model="keyword" type="search" class="form-control rounded-5"
-                            placeholder="Mau baca apa hari ini?">
+                            placeholder="cari siapa?">
                     </form>
                 </div>
                 <div class="my-3 text-muted">menampilkan {{ visitors.length }} dari {{ jumlah }}</div>
@@ -40,6 +40,7 @@
 const supabase = useSupabaseClient()
 const keyword = ref('')
 const visitors = ref ([])
+const jumlah = ref ([])
 
 const getpengunjung = async () => {
     const {data,error} = await supabase.from('pengunjung').select(`*, keanggotaan(*), keperluan(*)`)
