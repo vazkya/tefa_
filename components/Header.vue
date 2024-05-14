@@ -16,8 +16,9 @@
 
 <style scoped>
 img {
-    height: 110px;
-    width: 100px;
+    margin-top: 5px;
+    height: 105px;
+    width: 95px;
 }
 h1{
     margin-top: 10px;
