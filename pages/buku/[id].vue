@@ -65,5 +65,9 @@ h2{
     margin-top: 50px;
     margin-bottom: 1px;
 }
+p {
+    margin-left: 20px;
+    margin-bottom: 7px;
+}
 </style>
 
