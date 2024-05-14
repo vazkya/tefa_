@@ -5,7 +5,7 @@
         </div>
 
         <div class="col-lg-11">
-            <h1 style="font-size: 25px; margin-top: 20px;">PERPUS DIGITAL</h1>
+            <h1>PERPUS DIGITAL</h1>
             <address>
                 SMKN 4 Tasikmlaya<br>
                 Jl.Depok, Sukamenak, Purbaratu
