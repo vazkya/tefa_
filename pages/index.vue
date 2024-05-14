@@ -84,6 +84,7 @@ onMounted(() => {
 <style scoped>
 .card {
     height: 250px;
+    margin-right: 25px;
     box-shadow: 3px 1px 10px #424242;
 }
 .card.bg-pengunjung {
