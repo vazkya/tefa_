@@ -1,4 +1,11 @@
 <template>
+    <html lang="en">
+    <head>
+        <meta charset="UT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>menu</title>
+    </head>
+    <body>
     <div class="container-fluid">
         <div class="row my-5">
             <div class="col-lg-6">
@@ -53,13 +60,14 @@
         <div>
                 <Chart />
             </div>
-    
+    </body>
+    </html>
 </template>
 
 <script setup>
-const supabase = useSupabaseClient();
-const jumlahpengunjung = ref (0);
-const jumlahbuku = ref (0);
+const supabase = useSupabaseClient()
+const jumlahpengunjung = ref (0)
+const jumlahbuku = ref (0)
 
 async function ambiljumlahpengunjung() {
     const { data,error, count} = await supabase

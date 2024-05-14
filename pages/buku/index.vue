@@ -1,4 +1,11 @@
 <template>
+    <html lang="en">
+    <head>
+        <meta charset="UT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>buku</title>
+    </head>
+    <body>
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
@@ -24,6 +31,8 @@
             </div>
         </div>
     </div>
+    </body>
+    </html>
 </template>
 
 <script setup>
@@ -49,6 +58,12 @@ onMounted(() => {
 </script>
 
 <style scoped>
+/* .card-body {
+    width: 100%;
+    height: 20em;
+    padding: 0;
+} */
+
 .cover {
     width: 100%;
     /* height: 20em; */
