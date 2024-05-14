@@ -58,7 +58,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-
 .cover {
     width: 100%;
     object-fit: cover;
