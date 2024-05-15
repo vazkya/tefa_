@@ -90,6 +90,9 @@ onMounted(() => {
 </script>
 
 <style scoped>
+*{
+    text-decoration: none;
+}
 .card {
     height: 250px;
     margin-right: 27px;
