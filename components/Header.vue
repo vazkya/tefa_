@@ -16,7 +16,7 @@
 
 <style scoped>
 img {
-    margin-top: 8px;
+    margin-top: 5px;
     height: 130px;
     width: 110px;
 }
