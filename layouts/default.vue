@@ -1,6 +1,7 @@
 <template>
-    <div class="container-fluid">
+    <div>
         <Header />
         <slot />
+        <Footer />
     </div>
 </template>
