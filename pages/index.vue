@@ -56,9 +56,6 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import { useSupabaseClient } from '@supabase/supabase-js';
-
 // Inisialisasi Supabase Client
 const supabase = useSupabaseClient();
 
